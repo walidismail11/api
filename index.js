@@ -16,7 +16,7 @@ dotenv.config()
 
 mongoose
     .connect(
-        process.env.PORT
+        process.env.MONGO_URL
     ).then(()=>{
         console.log("DB connection Successful")
     }).catch((err)=>{
